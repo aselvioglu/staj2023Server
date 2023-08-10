@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const app = express();
 const port = 3000;
 
-//const mongoUri = "mongodb+srv://aydinselvioglu:ym22021977@cluster0.ysvlpb7.mongodb.net/";
-const mongoUri= "mongodb+srv://aydinselvioglu:ym22021977@cluster0.ysvlpb7.mongodb.net/blog?retryWrites=true&w=majority";
+//const mongoUri = "mongodb+srv://aydinselvioglu:********@cluster0.ysvlpb7.mongodb.net/";
+const mongoUri= "mongodb+srv://aydinselvioglu:*********@cluster0.ysvlpb7.mongodb.net/blog?retryWrites=true&w=majority";
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch(error => console.error('Error connecting to MongoDB:', error));
